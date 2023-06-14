@@ -1,0 +1,260 @@
+/* Estilos para el encabezado */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 13px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+}
+
+nav li {
+  margin: 0 25px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+  background-color: #71afa3;
+}
+.nav-responsive{
+  color:#1CB698;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+/* Estilos para la sección inicio */
+.inicio{
+  background-color: #969493; 
+  padding: 50px;
+}
+
+/* Estilos para la sección sobremi */
+
+.sobremi{
+  background-color: #c4c0c0; 
+  padding: 50px;
+}
+
+h2, h3 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la sección habilidades */
+
+
+.habilidades{
+  background-color: #969493; 
+  padding: 50px;
+}
+.skill {
+  margin-bottom: 10px;
+  border-bottom: 3px solid #cccccc85;
+  padding-bottom: 10px;
+}
+.contenedor-skills h1 {
+  text-align: center;
+}
+
+.barra-progreso {
+  background-color: #4caf50;
+  width: 0;
+  height: 10px;
+  animation: progreso 3.5s forwards;
+}
+
+.barra-progreso1 {
+  background-color: #3eb6d4;
+  width: 0;
+  height: 10px;
+  animation: progreso 5s forwards;
+}
+@keyframes progreso {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progreso1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+        .contenedor-skills .skill {
+          max-width: 600px;
+          margin: 30px auto;
+      }
+
+
+/* Estilos para la sección de proyectos */
+.proyectos {
+  margin: auto;
+  background-color: #bebebe; 
+  padding: 50px;
+}
+
+.proyectos h1 {
+  text-align: center;
+}
+
+.proyectos .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-gap: 50px;
+  grid-template-rows: repeat(auto-fit, 400px);
+
+}
+
+.proyectos .item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #8d8d8d;
+  border-radius: 10px;
+}
+
+.proyectos .item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.proyectos .item .info {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+}
+
+.proyectos .item .info span {
+  color: #8d8d8d;
+  display: inline-block;
+  border: 2px solid #8d8d8d;
+  margin: 0 3px;
+  padding: 0 5px;
+}
+
+.proyectos .item .info a {
+  display: block;
+  margin: 20px;
+  text-decoration: none;
+  color: #007be5;
+  font-weight: bold;
+}
+
+.proyectos .item:hover .info {
+  opacity: 1;
+  top: 0;
+}
+
+.proyectos .item.programacion .info span {
+  background-color: #ffffff;
+  color: #070707c2;
+}
+
+.proyectos .item.programacion .info a {
+  background-color: #007be5;
+  color: #fff;
+}
+
+
+/* Estilos para la sección de contacto */
+.contacto{
+  background-color: #CCCCCC; 
+  padding: 50px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+footer .redes_contacto a{
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  margin: 44px 5px;
+  font-size: 28px;
+}
+footer .redes_contacto a:hover{
+  background-color: #71afa3;
+}
+
+/* Estilos para responsive */
+@media screen and (max-width:980px){
+  nav{
+      display: none;
+  }
+  nav.responsive{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 75px;
+      background-color: #252A2E;
+      width: 180px;
+  }
+  nav.responsive ul{
+      display: block;
+  }
+  nav.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px 0;
+  }
+
+}
+@media screen and (min-width:981px){
+  nav.responsive{
+    display: none;
+}
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="Portafolio.css">
+    
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <div class="contenedor-header">
+    <header>
+        
+      <nav id="nav" class="">
+        <ul id="vinculos">
+          <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+          <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+          <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+    </header>
+  </div>
+
+  <!-- SECCION DE INICIO -->  
+    <section id="inicio" class="inicio">
+      <div class="contenido-inicio">
+      <h1>INSPIRATE, CONSTRUYE Y CREA </h1>
+      <h2>Soy Nicolás </h2>
+      <p>¡Sean bienvenidos a mi mundo de creación digital! Sumérgete en un viaje cautivador a través de mi portafolio, donde la sorpresa y el aprendizaje te esperan en cada rincón.</p>
+    </section>
+  </div>
+  <!-- SECCION SOBRE MI --> 
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-sobremi">
+      <h1><strong> SOBRE MI</strong></h1>
+      <h3>Desarrollador Web</h3>
+      <p>¡Hola!  soy Nicolás, me encanta sumergirme en el emocionante mundo de la programación y sorprenderme constantemente con nuevas tecnologías y tendencias que van saliendo.
+        Soy una persona creativa y me encanta encontrar soluciones innovadoras a los problemas. Disfruto explorando diferentes enfoques buscando la manera más eficiente 
+        y me gusta pensar fuera de la caja permitiendome encontrar soluciones únicas que sorprendan a los usuarios y mejoren su experiencia.
+      </p>
+    </section>
+  </div>
+  <!-- SECCION DE HABILIDADES --> 
+<section class="habilidades" id="habilidades">
+  <div class="contenido-habilidades">
+    <div class="fila">
+      <div class="contenedor-skills" id="skills">
+        <h1><strong> HABILIDADES</strong> </h1>
+
+          <!-- Habilidades tecnicas -->
+          <div class="col">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skill">
+              <span>Html</span>
+              <div class="barra-skill" id="html">
+                <div class="barra-progreso" ></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Css</span>
+              <div class="barra-skill" id="css">
+                <div class="barra-progreso" ></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill" id="javascript">
+                <div class="barra-progreso" ></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Linux</span>
+              <div class="barra-skill" id="linux">
+                <div class="barra-progreso" ></div>
+              </div>
+            </div>
+
+          </div>
+  
+          <!-- Habilidades blandas-->
+          <div class="col">
+            <h3>Habilidades Blandas</h3>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill" id="creatividad">
+                <div class="barra-progreso1" ></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill" id="equipo">
+                <div class="barra-progreso1"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Planificación y Gestión del Tiempo</span>
+              <div class="barra-skill" id="planificacion">
+                <div class="barra-progreso1"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill" id="dedicacion">
+                <div class="barra-progreso1" ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  <!-- SECCION DE PROYECTOS --> 
+  <section class="proyectos" id="proyectos">
+    <h1><strong> MIS PROYECTOS</strong></h1>
+
+
+    <div class="galeria">
+        <div class="item programacion">
+            <img src="img/Reproductor de música.jpg" alt="">
+            <div class="info">
+                <h3>Reproductor de musica</h3>
+                <span>html</span><span>css</span><span>javascript</span>
+                <a href="Proyectos/Musica/Musica.html" target="_blank">Ver Trabajo</a>
+            </div>
+        </div>
+        <div class="item programacion">
+            <img src="img/Reloj circular de pared.jpg" alt="">
+            <div class="info">
+                <h3>Reloj de Pared</h3>
+                <span>html</span><span>css</span><span>javascript</span>
+                <a href="Proyectos/Reloj/Reloj.html" target="_blank">Ver Trabajo</a>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- SECCION CONTACTO -->
+   <section  class="contacto" id="contacto" >
+    <h1><strong> CONTACTO </strong></h1>
+  
+    <form action="https://formsubmit.co/57cdfaef61b548030604c7783dcd3300" method="POST" />
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" class="name"  placeholder="Nombre" required>
+  
+      <label for="correo">Email:</label>
+      <input type="email" id="correo" name="correo"  class="email" placeholder="Dirección de correo" required>
+  
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5"  class="mensaje" placeholder="Mensaje" required></textarea>
+  
+      <button type="submit">Enviar</button>
+
+      <input type="hidden" name="_next" value="http://localhost:8000/Portafolio/Portafolio.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </section>
+ 
+  <footer>
+    <div class="redes_contacto">
+    <h1><strong>Redes de Contacto</strong></h1>
+    <a href="https://t.me/Nicolas0814" target="_blank"><i class="fa-brands fa-telegram" style="color: #316cd3;"></i></a>
+    <a href="https://github.com/Nicolas0814" target="_blank"><i class="fa-brands fa-github" style="color: #080808;"></i></a>
+    <a href="https://wa.link/h00u4v" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #18a021;"></i></a>
+    <a href="https://twitter.com/0814Nicolas" target="_blank"><i class="fa-brands fa-twitter" style="color: #2c66c9;"></i></a>
+    
+  </div>
+    <p> &copy; Portafolio Nicolás 2023 - Aprende Creando </p>
+    
+  </footer>
+  
+
+    <script src="Portafolio.js"></script>
+  </body>
+</html>
