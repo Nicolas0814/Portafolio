@@ -10,6 +10,7 @@ function mostrarOcultarMenu(){
 }
 window.onscroll = function() { efectoHabilidades() };
 
+/*Animación de Habilidades*/
 function efectoHabilidades() {
   var skills = document.getElementById("skills");
   var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;

@@ -2,16 +2,28 @@
 header {
   background-color: #222;
   color: #fff;
-  padding: 13px;
+  padding: 10px;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 10;
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: #222;
+}
+nav ul li {
+  margin-right: 72px; 
+  padding: 10 0px; 
+  position: relative;
+}
+
+nav ul li:hover::before {
+  height: 100%; 
+}
+
+nav ul li a {
+  color: white;
 }
 
 nav li {
@@ -29,27 +41,31 @@ nav a:hover{
 }
 .nav-responsive{
   color:#1CB698;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 
 /* Estilos para la sección inicio */
 .inicio{
   background-color: #969493; 
-  padding: 50px;
+  font-size: 25px;
+  padding: 70px;
 }
 
 /* Estilos para la sección sobremi */
 
 .sobremi{
   background-color: #c4c0c0; 
-  padding: 50px;
+  font-size: 20px;
+  padding: 80px;
 }
-
+p{
+  font-size: 20px;
+}
 h2, h3 {
   color: #333;
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -58,7 +74,7 @@ h2, h3 {
 
 .habilidades{
   background-color: #969493; 
-  padding: 50px;
+  padding: 45px;
 }
 .skill {
   margin-bottom: 10px;
@@ -108,7 +124,7 @@ h2, h3 {
 .proyectos {
   margin: auto;
   background-color: #bebebe; 
-  padding: 50px;
+  padding: 32px;
 }
 
 .proyectos h1 {
@@ -117,17 +133,17 @@ h2, h3 {
 
 .proyectos .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  grid-gap: 50px;
-  grid-template-rows: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+  grid-gap: 32px;
+  grid-template-rows: repeat(auto-fit, 345px);
 
 }
 
 .proyectos .item {
   position: relative;
   overflow: hidden;
-  border: 1px solid #8d8d8d;
-  border-radius: 10px;
+  border: 2.7px solid #524f4f;
+  border-radius: 41px;
 }
 
 .proyectos .item img {
@@ -158,10 +174,11 @@ h2, h3 {
 
 .proyectos .item .info a {
   display: block;
-  margin: 20px;
+  margin: 30px;
   text-decoration: none;
   color: #007be5;
   font-weight: bold;
+  padding: 6px;
 }
 
 .proyectos .item:hover .info {
@@ -172,41 +189,13 @@ h2, h3 {
 .proyectos .item.programacion .info span {
   background-color: #ffffff;
   color: #070707c2;
+  border-radius: 7px;
 }
 
 .proyectos .item.programacion .info a {
   background-color: #007be5;
   color: #fff;
-}
-
-
-/* Estilos para la sección de contacto */
-.contacto{
-  background-color: #CCCCCC; 
-  padding: 50px;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-form button[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-form button[type="submit"]:hover {
-  background-color: #444;
+  border-radius: 7px;
 }
 
 /* Estilos para el pie de página */
@@ -224,7 +213,7 @@ footer .redes_contacto a{
   width: 44px;
   height: 44px;
   line-height: 44px;
-  margin: 44px 5px;
+  margin: 48px 5px;
   font-size: 28px;
 }
 footer .redes_contacto a:hover{
@@ -234,13 +223,13 @@ footer .redes_contacto a:hover{
 /* Estilos para responsive */
 @media screen and (max-width:980px){
   nav{
-      display: none;
+    display: none;
   }
   nav.responsive{
       display: block;
       position: absolute;
-      left: 0;
-      top: 75px;
+      left: 8.2px;
+      top: 46.4px;
       background-color: #252A2E;
       width: 180px;
   }
@@ -251,10 +240,12 @@ footer .redes_contacto a:hover{
       border-bottom: 1px solid #fff;
       padding: 10px 0;
   }
-
 }
 @media screen and (min-width:981px){
-  nav.responsive{
-    display: none;
+.nav-responsive{
+  display: none;
+}
+nav ul li {
+  margin-bottom: -5px;  
 }
 }
